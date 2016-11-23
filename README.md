@@ -7,18 +7,11 @@
     ----------------------------------------------------------------- 
 
 
-Welcome to your Rails project on Cloud9 IDE!
-
-To get started, just do the following:
-
-1. Run the project with the "Run Project" button in the menu bar on top of the IDE.
-2. Preview your new app by clicking on the URL that appears in the Run panel below (https://udemy-ruby-on-rails-mikedrones.c9users.io/).
-
-Happy coding!
-The Cloud9 IDE team
+This is a repository for a test application from a udemy course.
 
 
-## Support & Documentation
 
-Visit http://docs.c9.io for support, or to learn more about using Cloud9 IDE. 
-To watch some training videos, visit http://www.youtube.com/user/c9ide
+ruby 2.3.0p0 (2015-12-25 revision 53290) [x86_64-linux]
+
+Support & Documentation
+ http://docs.c9.io 

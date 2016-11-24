@@ -50,9 +50,11 @@ group :development do
 end
 
 group :production do
+  ruby '2.2.6'
   #postgress for heroku
   gem 'pg'
   #rails_12factor this gem is not necessary for rails 5, may also need rails_serve_static_assets gem or just set config to serve_static_assets = true read more on github.
   gem 'rails_12factor'
+  gem 'rails_serve_static_assets'
 end
 

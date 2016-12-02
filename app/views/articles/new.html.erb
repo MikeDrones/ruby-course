@@ -1,0 +1,29 @@
+<!DOCTYPE HTML>
+<html>
+	<head>
+		<title>Create new article</title>
+		<meta charset="utf-8" />
+		<link rel="stylesheet" href="assets/stylesheets/uptown.css" />
+		<link href="https://fonts.googleapis.com/css?family=Shrikhand" rel="stylesheet">
+    </head>
+		<header>
+		<h1> Create new Article</h1>
+		</header>
+<%= form_for @article do |f| %>
+<div class="columns one-third card">
+	<p>
+		<%= f.label :title %><br/>
+		<%= f.text_field :title %>
+	</p>
+	<p>
+		<%= f.label :description %><br/>
+		<%= f.text_area :description %>
+	</p>
+	<p>
+		<%= f.submit %>
+	</p>
+<% end %>
+</div>
+
+
+</html>

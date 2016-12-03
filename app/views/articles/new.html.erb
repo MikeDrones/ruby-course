@@ -9,6 +9,16 @@
 		<header>
 		<h1> Create new Article</h1>
 		</header>
+		
+		<% if @article.errors.any? %>
+		<ul>
+			<% @article.errors.full_messages.each do |msg| %>
+			<li><%= msg %></li>
+			<% end %>
+		</ul>
+		<% end %>
+		
+		
 <%= form_for @article do |f| %>
 <div class="columns one-third card">
 	<p>

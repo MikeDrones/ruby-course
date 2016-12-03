@@ -10,31 +10,7 @@
 		<h1> Create new Article</h1>
 		</header>
 		
-		<% if @article.errors.any? %>
-		<ul>
-			<% @article.errors.full_messages.each do |msg| %>
-			<li><%= msg %></li>
-			<% end %>
-		</ul>
-		<% end %>
-		
-		
-<%= form_for @article do |f| %>
-<div class="columns one-third card">
-	<p>
-		<%= f.label :title %><br/>
-		<%= f.text_field :title %>
-	</p>
-	<p>
-		<%= f.label :description %><br/>
-		<%= f.text_area :description %>
-	</p>
-	<p>
-		<%= f.submit %>
-	</p>
-<% end %>
-</div>
-<%= link_to "Back to articles listing", articles_path %>
+		<%= render 'form' %>
 
 
 </html>

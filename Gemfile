@@ -47,12 +47,15 @@ end
 group :development do
 # Access an IRB console on exception pages or by using <%= console %> in views
   gem 'web-console', '~> 2.0'
-
 # Spring speeds up development by keeping your application running in the background. Read more: https://github.com/rails/spring
   gem 'spring'
 end
 
 group :production do
+  #heroku puma server
+  gem 'puma'
+  #heroku requested that i add this line.
+  #ruby '2.2.6' 
   # postgress for heroku
   gem 'pg'
   # rails_12factor this gem is not necessary for rails 5, may also need rails_serve_static_assets gem or just set config to serve_static_assets = true read more on github.

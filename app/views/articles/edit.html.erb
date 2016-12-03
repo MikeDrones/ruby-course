@@ -1,13 +1,13 @@
 <!DOCTYPE HTML>
 <html>
 	<head>
-		<title>Create new article</title>
+		<title>Edit an Article</title>
 		<meta charset="utf-8" />
 		<link rel="stylesheet" href="assets/stylesheets/uptown.css" />
 		<link href="https://fonts.googleapis.com/css?family=Shrikhand" rel="stylesheet">
     </head>
 		<header>
-		<h1> Create new Article</h1>
+		<h1>Edit an Article</h1>
 		</header>
 		
 		<% if @article.errors.any? %>
@@ -17,8 +17,7 @@
 			<% end %>
 		</ul>
 		<% end %>
-		
-		
+
 <%= form_for @article do |f| %>
 <div class="columns one-third card">
 	<p>

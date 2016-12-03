@@ -1,10 +1,9 @@
 source 'https://rubygems.org'
 
-
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
 gem 'rails', '4.2.5'
 # Use sqlite3 as the database for Active Record
-#gem 'sqlite3'
+# gem 'sqlite3'
 # Use SCSS for stylesheets
 gem 'sass-rails', '~> 5.0'
 # Use Uglifier as compressor for JavaScript assets
@@ -35,24 +34,28 @@ gem 'sdoc', '~> 0.4.0', group: :doc
 # Bourbon For the SCSS Files
 gem 'bourbon'
 
+# rubocop https://github.com/bbatsov/rubocop/blob/master/README.md
+gem 'rubocop', require: false
+
 group :development, :test do
   gem 'sqlite3'
-  # Call 'byebug' anywhere in the code to stop execution and get a debugger console
+
+# Call 'byebug' anywhere in the code to get a debugger console
   gem 'byebug'
 end
 
 group :development do
-  # Access an IRB console on exception pages or by using <%= console %> in views
+# Access an IRB console on exception pages or by using <%= console %> in views
   gem 'web-console', '~> 2.0'
 
-  # Spring speeds up development by keeping your application running in the background. Read more: https://github.com/rails/spring
+# Spring speeds up development by keeping your application running in the background. Read more: https://github.com/rails/spring
   gem 'spring'
 end
 
 group :production do
-  #postgress for heroku
+  # postgress for heroku
   gem 'pg'
-  #rails_12factor this gem is not necessary for rails 5, may also need rails_serve_static_assets gem or just set config to serve_static_assets = true read more on github.
+  # rails_12factor this gem is not necessary for rails 5, may also need rails_serve_static_assets gem or just set config to serve_static_assets = true read more on github.
   gem 'rails_12factor'
   gem 'rails_serve_static_assets'
 end

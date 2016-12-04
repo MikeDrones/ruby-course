@@ -1,2 +1,34 @@
+
+$navbar-default-bg: #1afcd4;
+
 @import "bootstrap-sprockets";
 @import "bootstrap";
+
+
+#logo {
+  float: left;
+  font-size: 2.0em;
+  color: #0D0D0D;
+  text-transform: uppercase;
+  letter-spacing: 0px;
+  font-weight: bold;
+  font-family: 'Shrikhand', cursive;
+}
+
+.jumbotron {
+    margin-bottom: 0px;
+    background-image: url(pineapple_02.jpg);
+    background-position: 25% 25%;
+    background-size: cover;
+    background-repeat: no-repeat;
+    color: white;
+    font-family: 'Shrikhand', cursive;
+    text-shadow: black 0.3em 0.3em 0.3em;
+}
+
+footer {
+  maring-top: 45px;
+  padding-top: 5px;
+  border-top: 1px solid #0d0d0d;
+  colour: #777;
+}

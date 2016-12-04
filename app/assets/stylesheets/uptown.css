@@ -1732,10 +1732,12 @@ header {
   background-repeat: no-repeat;
   padding-top: 4.5rem;
   box-sizing: border-box;
-  font-family: 'Shrikhand', cursive; }
+  color: white;
+  font-family: 'Shrikhand', cursive;
+  text-shadow: black 0.3em 0.3em 0.3em; }
   
   header h1 {
-    color: #67683E;
+    color: white;
     font-size: 6.2rem;
     font-weight: 300;
     line-height: 1.2em;

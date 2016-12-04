@@ -8,18 +8,20 @@ $navbar-default-bg: #1afcd4;
 #logo {
   float: left;
   font-size: 2.0em;
-  color: #0D0D0D;
+  color: white;
   text-transform: uppercase;
   letter-spacing: 0px;
-  font-weight: bold;
+  font-weight: normal;
   font-family: 'Shrikhand', cursive;
+  text-shadow: black 0.3em 0.3em 0.3em;
 }
 
 .jumbotron {
     margin-bottom: 0px;
     background-image: url(pineapple_02.jpg);
-    background-position: 25% 25%;
+    background-position: 30% 30%;
     background-size: cover;
+    height: 550px;
     background-repeat: no-repeat;
     color: white;
     font-family: 'Shrikhand', cursive;
@@ -27,8 +29,8 @@ $navbar-default-bg: #1afcd4;
 }
 
 footer {
-  maring-top: 45px;
+  margin-top: 45px;
   padding-top: 5px;
-  border-top: 1px solid #0d0d0d;
-  colour: #777;
+  border-top: 1px solid ;
+  color: #777;
 }

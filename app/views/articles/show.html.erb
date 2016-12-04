@@ -1,5 +1,18 @@
-<h1>Showing Selected article</h1>
-
+<!DOCTYPE HTML>
+<html>
+	<head>
+		<title>All article</title>
+		<meta charset="utf-8" />
+		<link rel="stylesheet" href="assets/stylesheets/uptown.css" />
+		<link href="https://fonts.googleapis.com/css?family=Shrikhand" rel="stylesheet">
+    </head>
+		<header>
+		<h1>Showing Selected Article</h1>
+		</header>
+		<%= link_to "Back to articles listing", articles_path %>
+		<p>
+		<%= link_to "Create new article", new_article_path %>
+		</p>
 <p>
   Title: <%= @article.title %>
 </p>

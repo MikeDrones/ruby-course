@@ -1,11 +1,4 @@
-		<% if @article.errors.any? %>
-		<ul>
-			<% @article.errors.full_messages.each do |msg| %>
-			<li><%= msg %></li>
-			<% end %>
-		</ul>
-		<% end %>
-
+<%= render 'shared/errors', obj: @article %>
 <%= form_for @article do |f| %>
 <div class="columns one-third card">
 	<p>

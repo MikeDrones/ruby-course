@@ -28,6 +28,23 @@ $navbar-default-bg: #1afcd4;
     text-shadow: black 0.3em 0.3em 0.3em;
 }
 
+header {
+  display: block;
+  position: relative;
+  width: 100%;
+  min-height: 20.0rem;
+  text-align: center;  
+  /*background-color: #1AFCD4; */
+  background-image: url(pineapple_02.jpg); 
+  background-size: 100% 100%;
+  background-position: 100% 100%;
+  background-repeat: no-repeat;
+  padding-top: 4.5rem;
+  box-sizing: border-box;
+  color: white;
+  font-family: 'Shrikhand', cursive;
+  text-shadow: black 0.3em 0.3em 0.3em; }
+
 footer {
   margin-top: 45px;
   padding-top: 5px;

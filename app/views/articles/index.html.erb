@@ -3,32 +3,30 @@
 	<head>
 		<title>All article</title>
 		<meta charset="utf-8" />
-		<link rel="stylesheet" href="assets/stylesheets/uptown.css" />
+		<link rel="stylesheet" href="assets/stylesheets/custom.css.scss" />
 		<link href="https://fonts.googleapis.com/css?family=Shrikhand" rel="stylesheet">
     </head>
 		<header>
 		<h1> All Articles</h1>
 		</header>
-		<%= link_to "Back to articles listing", articles_path %>
-		<p>
-		<%= link_to "Create new article", new_article_path %>
-		</p>
 	<table>
 	  <tr>
-	    <th>Title</th>
-	    <th>Description</th>
+	    <div class="table-heading">
+	    	<th>Title</th>
+	    	<th>Description</th>
+	    </div>
 	  </tr>
-	  
 	  <% @articles.each do |article| %>
 	  <tr>
-	    <td><%= article.title %></td>
-	    <td><%= article.description %></td>
-	    <td><%= link_to 'Edit', edit_article_path(article) %></td>
-	    <td><%= link_to 'Show', article_path(article) %></td>
-	    <td><%= link_to 'Delete', article_path(article), method: :delete, data: {confirm: "are you sure"} %></td>
-	  </tr>
-	   <% end %>
-	  
-	</table>
-	
+	    <td><%= truncate(article.title, length: 30) %></td>
+	    <td><%= truncate(article.description, length: 60) %></td>
+	    <div class="article-actions">
+	      <td><%= link_to 'Show', article_path(article), class: "btn btn-xs btn-success" %></td>
+				<td><%= link_to "Edit this article", edit_article_path(article), class: "btn btn-xs btn-primary" %></td>
+				<td><%= link_to "Delete this article", article_path(article), method: :delete,
+								data: { confirm: "Are you Sure?"}, class: "btn btn-xs btn-danger" %></td>
+			</div>
+	   </tr>
+	  <% end %>
+	 </table>
 </html>

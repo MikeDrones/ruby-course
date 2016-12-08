@@ -14,7 +14,7 @@
 .column,
 .columns {
   width: 100%;
-  float: left;
+  display: inline-block;
   box-sizing: border-box; 
 
   /* For devices larger than 550px */

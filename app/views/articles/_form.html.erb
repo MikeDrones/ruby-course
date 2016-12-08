@@ -1,17 +1,18 @@
+	<div class="center">
 <%= render 'shared/errors', obj: @article %>
 <%= form_for @article do |f| %>
-<div class="columns one-third card">
-	<p>
-		<%= f.label :title %><br/>
-		<%= f.text_field :title %>
-	</p>
-	<p>
-		<%= f.label :description %><br/>
-		<%= f.text_area :description %>
-	</p>
-	<p>
-		<%= f.submit %>
-	</p>
-<% end %>
-</div>
-</html>
+	<div class="column one-half">
+		<p>
+			<%= f.label :title %><br/>
+			<%= f.text_field :title %>
+		</p>
+		<p>
+			<%= f.label :description %><br/>
+			<%= f.text_area :description %>
+		</p>
+		<p>
+			<%= f.submit %>
+		</p>
+		<% end %>
+	</div>
+	</div>

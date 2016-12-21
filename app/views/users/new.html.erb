@@ -6,33 +6,8 @@
 		<link rel="stylesheet" href="assets/stylesheets/custom.css.scss" />
 		<link href="https://fonts.googleapis.com/css?family=Shrikhand" rel="stylesheet">
     </head>
+    <%= render 'shared/errors', obj: @user %>
 			<div class="jumbotron">	
 	<div class="center">
 	<h1>Sign Up</h1>  
-<%= render 'shared/errors', obj: @user %>
-<%= form_for @user do |f| %>
-	<div class="column one-half">
-		<p>
-		  <h2>Username
-			<%= f.text_field :username %>
-			</h2>
-		</p>
-		<p>
-			<h2>E-Mail
-			<%= f.email_field :email %>
-			</h2>
-		</p>
-		<p>
-			<h2>Password
-			<%= f.password_field :password %>
-			</h2>
-		</p>
-		<p>
-		  </br>
-			<%= f.submit "Sign Up" %>
-		</p>
-		<% end %>
-	</div>
-	</div>
-	</div>
-</html>
+<%= render 'form' %>

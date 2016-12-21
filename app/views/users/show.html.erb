@@ -1,0 +1,20 @@
+<!DOCTYPE HTML>
+<html>
+	<head>
+		<title>ALPHA BLOG</title>
+		<meta charset="utf-8" />
+		<link href="https://fonts.googleapis.com/css?family=Shrikhand" rel="stylesheet">
+    </head>
+    <%= render 'shared/errors', obj: @user %>
+			<div class="jumbotron1">
+	        <h1>Welcome to <%= @user.username %>'s page</h1> 
+	        <%= gravatar_for @user, size: 150 %>
+          </br>
+          </br>
+          <h1><%= @user.username %>'s articles</h1>
+      </div>
+      </br>
+        <div class="row">
+          
+        </div>
+	   <%= render 'articles/article', obj: @user.articles %>

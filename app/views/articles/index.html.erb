@@ -3,33 +3,9 @@
 	<head>
 		<title>All article</title>
 		<meta charset="utf-8" />
-		<link rel="stylesheet" href="assets/stylesheets/custom.css.scss" />
 		<link href="https://fonts.googleapis.com/css?family=Shrikhand" rel="stylesheet">
     </head>
 		<div class="jumbotron2">
 					<h1 align="center">All Articles</h1>
 				</div>
-	<table>
-	  <tr>
-	    <div class="table-heading">
-	    	<th>Title</th>
-	    	<th>Description</th>
-	    </div>
-	  </tr>
-	  <% @articles.each do |article| %>
-	  <tr>
-	    <td><%= truncate(article.title, length: 30) %></td>
-	    <td><%= truncate(article.description, length: 60) %></td>
-	    <td><small>Created by: <%= article.user.username if article.user %>
-	    	<%= time_ago_in_words(article.created_at) %> ago,
-	    	<br>Last edit: <%= time_ago_in_words(article.updated_at) %> ago</small></td>
-	    <div class="article-actions">
-	      <td><%= link_to 'Show', article_path(article), class: "btn btn-xs btn-success" %></td>
-				<td><%= link_to "Edit this article", edit_article_path(article), class: "btn btn-xs btn-primary" %></td>
-				<td><%= link_to "Delete this article", article_path(article), method: :delete,
-								data: { confirm: "Are you Sure?"}, class: "btn btn-xs btn-danger" %></td>
-			</div>
-	   </tr>
-	  <% end %>
-	 </table>
-</html>
+	  <%= render 'article', obj: @articles %>

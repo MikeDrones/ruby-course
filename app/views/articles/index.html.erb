@@ -20,6 +20,9 @@
 	  <tr>
 	    <td><%= truncate(article.title, length: 30) %></td>
 	    <td><%= truncate(article.description, length: 60) %></td>
+	    <td><small>Created by: <%= article.user.username if article.user %>
+	    	<%= time_ago_in_words(article.created_at) %> ago,
+	    	<br>Last edit: <%= time_ago_in_words(article.updated_at) %> ago</small></td>
 	    <div class="article-actions">
 	      <td><%= link_to 'Show', article_path(article), class: "btn btn-xs btn-success" %></td>
 				<td><%= link_to "Edit this article", edit_article_path(article), class: "btn btn-xs btn-primary" %></td>

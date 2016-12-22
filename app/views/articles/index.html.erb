@@ -6,6 +6,15 @@
 		<link href="https://fonts.googleapis.com/css?family=Shrikhand" rel="stylesheet">
     </head>
 		<div class="jumbotron2">
-					<h1 align="center">All Articles</h1>
-				</div>
-	  <%= render 'article', obj: @articles %>
+			<h1 align="center">All Articles</h1>
+		</div>
+	<div align="center">
+	<%= will_paginate %>
+	</div>
+	<%= render 'article', obj: @articles %>
+	<div align="center">
+	<%= will_paginate %>
+	</div>
+</html>
+
+	

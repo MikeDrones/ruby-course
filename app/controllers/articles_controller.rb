@@ -5,6 +5,11 @@ class ArticlesController < ApplicationController
     @articles = Article.all
   end
  
+  def index
+   @articles = Article.paginate(page: params[:page], per_page: 5)
+  end
+ 
+ 
   def new 
     @article = Article.new      
   end

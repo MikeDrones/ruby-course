@@ -1,0 +1,30 @@
+<!DOCTYPE HTML>
+<html>
+	<head>
+		<title>ALPHA BLOG</title>
+		<meta charset="utf-8" />
+		<link href="https://fonts.googleapis.com/css?family=Shrikhand" rel="stylesheet">
+    </head>
+			<div class="jumbotron">
+			<h1>Log In</h1>
+<%= form_for(:session, url: login_path) do |f| %>
+	<div class="column one-half">
+		<p>
+			<h2>E-Mail
+			<%= f.email_field :email %>
+			</h2>
+		</p>
+		<p>
+			<h2>Password
+			<%= f.password_field :password %>
+			</h2>
+		</p>
+		<p>
+		  </br>
+			<%= f.submit "Log in"  %>
+		</p>
+		<% end %>
+	</div>
+	</div>
+	</div>
+</html>

@@ -37,7 +37,7 @@ gem 'sdoc', '~> 0.4.0', group: :doc
 
 # Bourbon For the SCSS Files
 gem 'bourbon'
-
+#for checking html
 # rubocop https://github.com/bbatsov/rubocop/blob/master/README.md
 gem 'rubocop', require: false
 

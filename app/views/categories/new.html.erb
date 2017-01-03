@@ -1,0 +1,20 @@
+<!DOCTYPE HTML>
+<html>
+	<head>
+		<title>Create Category</title>
+		<meta charset="utf-8" />
+		<link href="https://fonts.googleapis.com/css?family=Shrikhand" rel="stylesheet">
+    </head>
+				<div class="jumbotron1">
+				  <div class="column one-half">
+				<%= form_for @category do |f| %>
+					<h1 align="center">Category Name</h1>
+					</p>
+			<%= f.text_field :name %>
+        </br>
+			<%= f.submit %>
+		<% end %>
+		      </div>
+				</div>
+			</br>
+</html>

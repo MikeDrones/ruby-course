@@ -20,17 +20,20 @@
         <% if logged_in? %>
           <li><%= link_to "New Article", new_article_path %></li>
         <% end %>
-    <!--    <li class="dropdown">
-          <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Actions <span class="caret"></span></a>
+              <li class="dropdown">
+          <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Categories
+          <span class="caret"></span></a>
           <ul class="dropdown-menu">
-            <li></li>
-            <li><a href="#">Another action</a></li>
-            <li><a href="#">Something else here</a></li>
+            <li><%= link_to "All Categories", categories_path %></li>
+            <% Category.all.each do |category| %>
+            <li><%= link_to "#{category.name}", category_path(category) %></li>
+            <% end %>
+            <% if logged_in? and current_user.admin? %>
             <li role="separator" class="divider"></li>
-            <li><a href="#">Separated link</a></li>
-            <li role="separator" class="divider"></li>
-            <li><a href="#">One more separated link</a></li>
-            -->
+            <li><%= link_to "Create new Category", new_category_path %></li>
+            <% end %>
+            </ul>
+           </li>
           </ul>
         </li>
       </ul>
